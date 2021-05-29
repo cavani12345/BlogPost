@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Blog Post</title>
+        <link rel="stylesheet" href="../CSS/mystyle.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+        <script>
+            function load_model(){
+                var modal = document.getElementById('id01');
+                modal.style.display= 'block';
+                modal.style.backgroundColor='black';
+            }
+ 
+            function Hide_model(){
+             var modal = document.getElementById('id01');
+                modal.style.display= 'none'; 
+            }
+            function register_model(){
+                var register= document.getElementById('rmodel');
+                register.style.display= 'block';
+                register.style.backgroundColor='black';
+            }
+ 
+            function hideRegister(){
+             var register= document.getElementById('rmodel');
+              register.style.display= 'none';
+            }
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <a onclick=" register_model()">SignUp</a>
+            <a  onclick="load_model()" style="width:auto;">Login</a>    
+            <a  href="health.html">Health</a> 
+            <a  href="technology.html">Technology</a> 
+            <a   href="../index.html">Posts</a>
+            <div class="blog-logo"> 
+             <img src="../Images/logos.JPG" class="logo"> 
+            </div>
+                  
+
+        </div>
+        <div class="search">
+            <form>
+                <input type="text" placeholder="Search..." name="search" class="search-field">
+                <button type="submit" class="search-button"> Search</i></button>
+            </form>
+        </div>
+        <div class="sidebar">
+            <h2 class="category"> Categories</h2>
+            <a class="active" href="health.html">Health</a>
+            <a href="politics.html">Politics</a>
+            <a href="technology.html">Technology</a>
+            <a href="entertainment.html">Entertainment</a>
+          </div>
+
+         
+            <div class="post-holder">
+                <div class="post">
+                    <h2 style="text-align: center; font-size: 30px;"> Covid</h2>
+                    <a href="display.html">
+                        <img src="../Images/covid.JPG" class="post-photo"></a>
+                    <p class="par1"> Posted by: <b> Bahati</b></p>
+                    <p class="par2">The statement released last night also shows that 190 cases have been found out of 16811 sample tests, 359 have recovered while 16 patients are critically ill.
+
+The statement released last night also shows that 190 cases have been found, 359 have recovered while 16 patients are critically ill. The majority of new cases were found in Kigali: 54, Karongi: 34, Kayonza: 17, Nyamagabe: 16 and Nyagatare: 14.
+</p>             <a href="display.html" style="text-decoration: none;"> <h6 class="readmore">Read mre...</h6></a>
+                
+
+                </div>
+             
+                <div class="post">
+                    <h2 style="text-align: center; font-size: 30px;"> Surgery</h2>
+                    <a href="display.html">
+                        <img src="../Images/back.JPG" class="post-photo"></a>
+                    <p class="par1"> Posted by: <b> Bahati</b></p>
+                    <p  style="font-size: 20px; ">Fibromyalgia (FM) is a medical condition characterized by chronic widespread pain and a heightened pain response to pressure.
+
+Other symptoms include tiredness to a degree that normal activities are affected; sleep problems and troubles with memory.
+
+</p><a href="display.html" style="text-decoration: none;"> <h6 class="readmore">Read more...</h6></a>
+                
+
+                </div>
+             
+                <div class="post">
+                    <h2 style="text-align: center; font-size: 30px;"> Specialised Doctor</h2>
+                    <a href="display.html">
+                        <img src="../Images/doctor.JPG" class="post-photo"></a>
+                    <p class="par1"> Posted by: <b> Bahati</b></p>
+                    <p class="par2">Rodriguez has revealed that the condition cannot be confirmed within two or three months noting that it takes couple of months of unprotected sex.
+
+“We confirm infertility when the couple that didn’t use family planning methods spends two years of unprotected sexual intercourse without pregnancy. We cannot make the confirmation before two years but rather we do fertility consultations,” he said.
+
+</p>    <a href="display.html" style="text-decoration: none;"> <h6 class="readmore">Read more...</h6></a>
+                
+
+                </div>
+             
+             
+                <div class="post">
+                    <h2 style="text-align: center; font-size: 30px;"> Patient</h2>
+                    <a href="display.html">
+                        <img src="../Images/patient.JPG" class="post-photo"></a>
+                    <p class="par1"> Posted by: <b> Bahati</b></p>
+                    <p class="par2"> Dr. Goyal has said that finger sucking is a usual habit among children that it starts affecting the jaw after three years.
+
+“Finger sucking is normal for a child but it causes side effects if the practice spans for over three years. It starts damaging teeth at this stage and can be harmful if parents do not seek assistance from a dentist,” he said.
+
+</p>
+<a href="display.html" style="text-decoration: none;"> <h6 class="readmore">Read more...</h6></a>
+                
+
+                </div>
+             
+         
+                     
+              </div>
+
+              <div id="id01"class="login-modal ">
+                <div class="imgcontainer">
+                    <span onclick="Hide_model()" style="color: red; font-size: 20px;">&times;</span>
+                   
+                  </div>
+                  <h1 style="color: white; text-align: center;"> Login Model </h1>    
+                <div  class="">
+                  <div>
+                    <label for="uname" style="background-color: white; font-size: 20px;"><b>Email</b></label>
+                    <input type="text" placeholder=" Email Here " name="uname" class="txtlogin" required>
+              
+                    <label for="psw" style="background-color: white; font-size: 20px;"><b>Password</b></label>
+                    <input type="password" placeholder=" Password Here" name="psw" class="txtlogin" required>
+                  </div>
+                      <div>
+                        <label style="color: white;">
+                            <input type="checkbox"  name="remember"> Remember me
+                          </label>
+                      </div>
+                 <div style="margin: 30px 40px 10px;">
+                    <button type="button" onclick="Hide_model()" class="cancelbtn">Login</button>
+                 <a href="#" style="background-color: red; margin-left: 10px;">Forget Password</a>
+                 </div>
+              </div>
+              <div id="rmodel"class="register_model ">
+                <div class="imgcontainer">
+                    <span onclick="hideRegister()" style="color: red; font-size: 20px;">&times;</span>
+                   
+                  </div>
+                  <h1 style="color: white; text-align: center;"> Register Model </h1>    
+                <div  class="">
+                  <div>
+                    <label for="fname" style="background-color: white; font-size: 15px;">FirstName :</label>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" placeholder=" FistName Here " name="uname" class="regtext " required> <br>
+                    
+                    <label for="lname" style="background-color: white; font-size: 20px;"><b>LastName</b></label>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" placeholder=" LastName Here " name="uname" class="regtext" required><br>
+                  
+                    <label for="email" style="background-color: white; font-size: 20px;"><b>Email</b></label>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;<input type="text" placeholder=" Email Here " name="uname" class="regtext " required><br>
+              
+
+                    <label for="psw" style="background-color: white; font-size: 20px;"><b>Password</b></label>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="password" placeholder=" Password Here" name="psw" class="regtext " required><br>
+                  
+                    <label for="cpassowrd" style="background-color: white; font-size: 20px;"><b>Confirm Password</b></label>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="password" placeholder=" Password Here" name="psw" class="regtext " required><br>
+                  
+                </div>
+                 <div style="margin-top: 10px; margin-left: 30px;">
+                    <button type="button"  class="cancelbtn">Register</button>
+              
+              </div>
+  
+                  </div>
+
+
+
+    </body>
+</html>

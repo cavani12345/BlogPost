@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Blog Post</title>
+        <link rel="stylesheet" href="../CSS/mystyle.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+        <script>
+            function load_model(){
+                var modal = document.getElementById('id01');
+                modal.style.display= 'block';
+                modal.style.backgroundColor='black';
+            }
+ 
+            function Hide_model(){
+             var modal = document.getElementById('id01');
+                modal.style.display= 'none'; 
+            }
+            function register_model(){
+                var register= document.getElementById('rmodel');
+                register.style.display= 'block';
+                register.style.backgroundColor='black';
+            }
+ 
+            function hideRegister(){
+             var register= document.getElementById('rmodel');
+              register.style.display= 'none';
+            }
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <a onclick="register_model()">SignUp</a>
+            <a  onclick="load_model()"style="width:auto;">Login</a>    
+            <a  href="health.html">Health</a> 
+            <a  href="technology.html">Technology</a>  
+            <a  href="../index.html">Posts</a>
+            <div class="blog-logo"> 
+               <img src="../Images/logos.JPG" class="logo"> 
+            </div>
+                  
+
+        </div>
+        <div class="search">
+            <form>
+                <input type="text" placeholder="Search..." name="search" class="search-field">
+                <button type="submit" class="search-button"> Search</i></button>
+            </form>
+        </div>
+        <div class="sidebar">
+            <h2 class="category"> Categories</h2>
+            <a href="health.html">Health</a>
+            <a class="active" href="politics.html">Politics</a>
+            <a href="technology.html">Technology</a>
+            <a href="entertainment.html">Entertainment</a>
+          </div>
+
+         
+            <div class="post-holder">
+                <div class="post">
+                    <h2 style="text-align: center; font-size: 30px;"> Africa Union</h2>
+                    <a href="display.html">
+                        <img src="../Images/pol1.JPG" class="post-photo"></a>
+                    <p class="par1"> Posted by: <b> Bahati</b></p>
+                    <p class="par2">President Paul Kagame who is also the chairperson of the African Union (AU), had held a telephone talk with King Mohammed VI of Morocco who thanked him for the continued progress in reforms of the organization. </p>
+                      <a href="Pages/politiDetail.html" style="text-decoration: none;"> <h6 class="readmore">Read more...</h6></a>
+                
+
+                </div>
+             
+                <div class="post">
+                    <h2 style="text-align: center; font-size: 30px;"> Election Result</h2>
+                    <a href="display.html">
+                        <img src="../Images/pol2.JPG" class="post-photo"></a>
+                    <p class="par1"> Posted by: <b> Bahati</b></p>
+                    <p class="par2"> Denis Sassou Nguesso has been re-elected president of the Republic of the Congo with 88.57 percent of the vote, according to provisional results.
+</p> <a href="display.html" style="text-decoration: none;"> <h6 class="readmore">Read more...</h6></a>
+                
+
+                </div>
+             
+                <div class="post">
+                    <h2 style="text-align: center; font-size: 30px;"> RDC News</h2>
+                    <a href="display.html">
+                        <img src="../Images/pol3.JPG" class="post-photo"></a>
+                    <p class="par1"> Posted by: <b> Bahati</b></p>
+                    <p class="par2">ongolese political analyst Eloge Mwandwe says that he doesn’t see former DRC’s president Joseph Kabila interfering in the current president Felix Tshisekedi’s affairs, because he knows his limits.</p>
+                    <a href="display.html" style="text-decoration: none;"> <h6 class="readmore">Read more...</h6></a>
+                
+
+                </div>
+             
+             
+                <div class="post">
+                    <h2 style="text-align: center; font-size: 30px;"> Primier Minister</h2>
+                    <a href="display.html">
+                        <img src="../Images/pol4.JPG" class="post-photo"></a>
+                    <p class="par1"> Posted by: <b> Bahati</b></p>
+                    <p class="par2"> Premier Dr. Edouard Ngirente has received Sheikh Mohamed bin Abdulrahman Al Thani, Deputy Prime Minister & Minister of Foreign Affairs of Qatar and held discussions focusing on strengthening economic cooperation between the two countries</p>
+                     <a href="display.html" style="text-decoration: none;"> <h6 class="readmore">Read more...</h6></a>
+                
+
+                </div>
+
+         
+                     
+              </div>
+
+              
+              <div id="id01"class="login-modal ">
+                <div class="imgcontainer">
+                    <span onclick="Hide_model()" style="color: red; font-size: 20px;">&times;</span>
+                   
+                  </div>
+                  <h1 style="color: white; text-align: center;"> Login Model </h1>    
+                <div  class="">
+                  <div>
+                    <label for="uname" style="background-color: white; font-size: 20px;"><b>Email</b></label>
+                    <input type="text" placeholder=" Email Here " name="uname" class="txtlogin" required>
+              
+                    <label for="psw" style="background-color: white; font-size: 20px;"><b>Password</b></label>
+                    <input type="password" placeholder=" Password Here" name="psw" class="txtlogin" required>
+                  </div>
+                      <div>
+
+                        <label style="color: white;">
+                            <input type="checkbox"  name="remember"> Remember me
+                          </label>
+                      </div>
+                 <div style="margin: 30px 40px 10px;">
+
+                  
+                    <button type="button" onclick="Hide_model()" class="cancelbtn">Login</button>
+                 <a href="#" style="background-color: red; margin-left: 10px;">Forget Password</a>
+                 </div>
+              
+                
+              </div>
+  
+                  </div>
+
+    
+                  <div id="rmodel"class="register_model ">
+                    <div class="imgcontainer">
+                        <span onclick="hideRegister()" style="color: red; font-size: 20px;">&times;</span>
+                       
+                      </div>
+                      <h1 style="color: white; text-align: center;"> Register Model </h1>    
+                    <div  class="">
+                      <div>
+                        <label for="fname" style="background-color: white; font-size: 15px;">FirstName :</label>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" placeholder=" FistName Here " name="uname" class="regtext " required> <br>
+                        
+                        <label for="lname" style="background-color: white; font-size: 20px;"><b>LastName</b></label>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" placeholder=" LastName Here " name="uname" class="regtext" required><br>
+                      
+                        <label for="email" style="background-color: white; font-size: 20px;"><b>Email</b></label>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;<input type="text" placeholder=" Email Here " name="uname" class="regtext " required><br>
+                  
+
+                        <label for="psw" style="background-color: white; font-size: 20px;"><b>Password</b></label>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="password" placeholder=" Password Here" name="psw" class="regtext " required><br>
+                      
+                        <label for="cpassowrd" style="background-color: white; font-size: 20px;"><b>Confirm Password</b></label>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="password" placeholder=" Password Here" name="psw" class="regtext " required><br>
+                      
+                    </div>
+                     <div style="margin-top: 10px; margin-left: 30px;">
+                        <button type="button"  class="cancelbtn">Register</button>
+                  
+                  </div>
+      
+                      </div>
+
+
+
+    </body>
+</html>

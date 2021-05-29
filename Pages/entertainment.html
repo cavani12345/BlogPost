@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Blog Post</title>
+        <link rel="stylesheet" href="../CSS/mystyle.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+        <script>
+            function load_model(){
+                var modal = document.getElementById('id01');
+                modal.style.display= 'block';
+                modal.style.backgroundColor='black';
+            }
+ 
+            function Hide_model(){
+             var modal = document.getElementById('id01');
+                modal.style.display= 'none'; 
+            }
+            function register_model(){
+                var register= document.getElementById('rmodel');
+                register.style.display= 'block';
+                register.style.backgroundColor='black';
+            }
+ 
+            function hideRegister(){
+             var register= document.getElementById('rmodel');
+              register.style.display= 'none';
+            }
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <a onclick="register_model()">SignUp</a>
+            <a  onclick="load_model()" style="width:auto;">Login</a>    
+            <a  href="health.html">Health</a> 
+            <a  href="technology.html">Technology</a>  
+            <a   href="../index.html">Posts</a>
+            <div class="blog-logo"> 
+               <img src="../Images/logos.JPG" class="logo"> 
+            </div>
+                  
+
+        </div>
+        <div class="search">
+            <form>
+                <input type="text" placeholder="Search..." name="search" class="search-field">
+                <button type="submit" class="search-button"> Search</i></button>
+            </form>
+        </div>
+        <div class="sidebar">
+            <h2 class="category"> Categories</h2>
+            <a  href="health.html">Health</a>
+            <a href="politics.html">Politics</a>
+            <a href="technology.html">Technology</a>
+            <a class="active" href="entertainment.html">Entertainment</a>
+          </div>
+
+         
+            <div class="post-holder">
+                <div class="post">
+                    <h2 style="text-align: center; font-size: 30px;"> Mico The Best</h2>
+                    <a href="entertainDetail.html">
+                        <img src="../Images/ent1.png" class="post-photo"></a>
+                     <p class="par1"> Posted by: <b> Bahati</b></p>
+                    <p class="par2">Rwanda’s Afro-beat singer, Prosper Turatsinze a.k.a Mico The Best who has been raising awareness campaign against Tuberculosis (TB) has organized a concert to celebrate World Tuberculosis Day.
+                    </p> <a href="entertainDetail.html" style="text-decoration: none;"> <h6 class="readmore">Read more...</h6></a>
+                
+                </div>
+             
+                <div class="post">
+                    <h2 style="text-align: center; font-size: 30px;"> Bob Marley</h2>
+                    <a href="display.html">
+                        <img src="../Images/ent2.JPG" class="post-photo"></a>
+                    <p class="par1"> Posted by: <b> Bahati</b></p>
+                    <p class="par2">Bunny Wailer, a reggae luminary who was the last surviving founding member of the legendary group The Wailers, died on Tuesday in his native Jamaica. He was 73.</p>
+                    <a href="display.html" style="text-decoration: none;"> <h6 class="readmore">Read more...</h6></a>
+                
+
+                </div>
+             
+                <div class="post">
+                    <h2 style="text-align: center; font-size: 30px;"> Clarisa Karasira</h2>
+                    <a href="display.html">
+                        <img src="../Images/ent3.JPG" class="post-photo"></a>
+                    <p class="par1"> Posted by: <b> Bahati</b></p>
+                    <p class="par2"> Fast-rising Rwandan traditional singer Clarisse Karasira, has been legally married to her lover, Ifashabayo Sylvain Dejoie with whom they engaged in January 2021. </p>
+                    <a href="display.html" style="text-decoration: none;"> <h6 class="readmore">Read more...</h6></a>
+                
+
+                </div>
+             
+             
+                <div class="post">
+                    <h2 style="text-align: center; font-size: 30px;"> Meddy</h2>
+                    <a href="display.html">
+                        <img src="../Images/ent4.JPG" class="post-photo"></a>
+                    <p class="par1"> Posted by: <b> Bahati</b></p>
+                    <p class="par2"> Ngabo Medard Jobert a.k Meddy, a Rwandan popular artiste with a big fan-base from different countries has brought excitement to his fans releasing a new song ‘Carolina’ which has been waited for long. </p>
+                    <a href="display.html" style="text-decoration: none;"> <h6 class="readmore">Read more...</h6></a>
+                
+
+                </div>
+                <div class="post">
+                    <h2 style="text-align: center; font-size: 30px;"> modern equipment</h2>
+                    <a href="display.html">
+                        <img src="../Images/ent5.JPG" class="post-photo"></a>
+                    <p class="par1"> Posted by: <b> Bahati</b></p>
+                    <p class="par2"> Rwanda is building state-of-the art recording studio with modern equipment that meet international standards to support artistes in music production, at Nyundo School of Music, in Muhanga district under the auspices of Workforce Development Authority (WDA). </p>
+                     <a href="display.html" style="text-decoration: none;"> <h6 class="readmore">Read more...</h6></a>
+                
+
+                </div>
+         
+                     
+              </div>
+
+              
+              <div id="id01"class="login-modal ">
+                <div class="imgcontainer">
+                    <span onclick="Hide_model()" style="color: red; font-size: 20px;">&times;</span>
+                   
+                  </div>
+                  <h1 style="color: white; text-align: center;"> Login Model </h1>    
+                <div  class="">
+                  <div>
+                    <label for="uname" style="background-color: white; font-size: 20px;"><b>Email</b></label>
+                    <input type="text" placeholder=" Email Here " name="uname" class="txtlogin" required>
+              
+                    <label for="psw" style="background-color: white; font-size: 20px;"><b>Password</b></label>
+                    <input type="password" placeholder=" Password Here" name="psw" class="txtlogin" required>
+                  </div>
+                      <div>
+
+                        <label style="color: white;">
+                            <input type="checkbox"  name="remember"> Remember me
+                          </label>
+                      </div>
+                 <div style="margin: 30px 40px 10px;">
+
+                  
+                    <button type="button" onclick="Hide_model()" class="cancelbtn">Login</button>
+                 <a href="#" style="background-color: red; margin-left: 10px;">Forget Password</a>
+                 </div>
+              
+                
+              </div>
+  
+                  </div>
+
+    
+                  <div id="rmodel"class="register_model ">
+                    <div class="imgcontainer">
+                        <span onclick="hideRegister()" style="color: red; font-size: 20px;">&times;</span>
+                       
+                      </div>
+                      <h1 style="color: white; text-align: center;"> Register Model </h1>    
+                    <div  class="">
+                      <div>
+                        <label for="fname" style="background-color: white; font-size: 15px;">FirstName :</label>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" placeholder=" FistName Here " name="uname" class="regtext " required> <br>
+                        
+                        <label for="lname" style="background-color: white; font-size: 20px;"><b>LastName</b></label>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" placeholder=" LastName Here " name="uname" class="regtext" required><br>
+                      
+                        <label for="email" style="background-color: white; font-size: 20px;"><b>Email</b></label>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;<input type="text" placeholder=" Email Here " name="uname" class="regtext " required><br>
+                  
+
+                        <label for="psw" style="background-color: white; font-size: 20px;"><b>Password</b></label>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="password" placeholder=" Password Here" name="psw" class="regtext " required><br>
+                      
+                        <label for="cpassowrd" style="background-color: white; font-size: 20px;"><b>Confirm Password</b></label>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="password" placeholder=" Password Here" name="psw" class="regtext " required><br>
+                      
+                    </div>
+                     <div style="margin-top: 10px; margin-left: 30px;">
+                        <button type="button"  class="cancelbtn">Register</button>
+                  
+                  </div>
+      
+                      </div>
+
+
+
+    </body>
+</html>
